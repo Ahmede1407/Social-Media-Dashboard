@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="main">
+    <!-- Dashboard -->
+    <div class="dashboard">
+      <!-- heading -->
+      <div class="dashboard-heading flex justify-space-between">
+        <div>
+          <h1>Social Media Dashboard</h1>
+          <p class="bold-light-text-color">Total Followers: 23,004</p>
+        </div>
+        <div class="dashboard-toggle">
+          <span class="bold-light-text-color">Dark Mode</span>
+          <input type="checkbox" class="toggle-checkbox" name="" value="">
+          <label for="toggle-switch" class="toggle-label" id="toggle-switch"></label>
+        </div>
+      </div>
+      <!-- /heading -->
+      <!-- Cards -->
+      <div class="dashboard-cards">
+        <!-- Card -->
+        <div class="dashboard-card card facebook">
+          <div class="bar">
+
+          </div>
+          <div class="dashboard-card-social-media flex justify-center">
+            <img src="images\icon-facebook.svg" alt="FaceBook">
+            <span class="username small-font-size">@nathanf</span>
+          </div>
+          <p class="num">1987</p>
+          <p class="followers light-text-color">Followers</p>
+          <p class="status flex justify-center">
+            <img src="images\icon-up.svg" alt="Increase">
+            <span class="small-font-size up">12 Today</span>
+          </p>
+        </div>
+        <!-- /Card -->
+        <!-- Card -->
+        <div class="dashboard-card card twitter">
+          <div class="bar">
+
+          </div>
+          <div class="dashboard-card-social-media flex justify-center">
+            <img src="images\icon-twitter.svg" alt="twitter">
+            <span class="username small-font-size">@nathanf</span>
+          </div>
+          <p class="num">1044</p>
+          <p class="followers light-text-color">Followers</p>
+          <p class="status flex justify-center">
+            <img src="images\icon-up.svg" alt="Increase">
+            <span class="small-font-size up">99 Today</span>
+          </p>
+        </div>
+        <!-- /Card -->
+        <!-- Card -->
+        <div class="dashboard-card card instagram">
+          <div class="bar">
+
+          </div>
+          <div class="dashboard-card-social-media flex justify-center">
+            <img src="images\icon-instagram.svg" alt="instagram">
+            <span class="username small-font-size">@realnathanf</span>
+          </div>
+          <p class="num">11K</p>
+          <p class="followers light-text-color">Followers</p>
+          <p class="status flex justify-center">
+            <img src="images\icon-up.svg" alt="Increase">
+            <span class="small-font-size up">1099 Today</span>
+          </p>
+        </div>
+        <!-- /Card -->
+        <!-- Card -->
+        <div class="dashboard-card card youtube">
+          <div class="bar">
+
+          </div>
+          <div class="dashboard-card-social-media flex justify-center">
+            <img src="images\icon-youtube.svg" alt="youtube">
+            <span class="username small-font-size">Nathan F.</span>
+          </div>
+          <p class="num">8239</p>
+          <p class="followers light-text-color">SUBSCRIBERS</p>
+          <p class="status flex justify-center">
+            <img src="images\icon-down.svg" alt="Decrease">
+            <span class="small-font-size down">144 Today</span>
+          </p>
+        </div>
+        <!-- /Card -->
+      </div>
+      <!-- /Cards -->
+    </div>
+    <!-- /Dashboard -->
+
+    <!-- Over View -->
+    <div class="overview">
+      <div class="dashboard-heading">
+        <h2 class="bold-light-text-color">Overview - Today</h2>
+      </div>
+      <div class="dashboard-cards" id="cards-container">
+        <!-- Card -->
+        <div class="overview-card card facebook">
+          <div class="flex justify-space-between">
+            <h5 class="bold-light-text-color" id="page">Page Views</h5>
+            <img src="images\icon-facebook.svg" alt="facebook">
+          </div>
+          <div class="flex justify-space-between">
+            <div class="num" id="num">
+              87
+            </div>
+            <div class="status flex justify-center">
+              <img src="images\icon-up.svg" alt="" id="status-sign">
+              <span class="up" id="status">3%</span>
+            </div>
+          </div>
+        </div>
+        <!-- /Card -->
+        <!-- Card -->
+        <div class="overview-card card facebook">
+          <div class="flex justify-space-between">
+            <h5 class="bold-light-text-color" id="page">Likes</h5>
+            <img src="images\icon-facebook.svg" alt="facebook">
+          </div>
+          <div class="flex justify-space-between">
+            <div class="num" id="num">
+              52
+            </div>
+            <div class="status flex justify-center">
+              <img src="images\icon-down.svg" alt="" id="status-sign">
+              <span class="down" id="status">2%</span>
+            </div>
+          </div>
+        </div>
+        <!-- /Card -->
+        <!-- Card -->
+        <div class="overview-card card instagram">
+          <div class="flex justify-space-between">
+            <h5 class="bold-light-text-color" id="page">Likes</h5>
+            <img src="images\icon-instagram.svg" alt="instagram">
+          </div>
+          <div class="flex justify-space-between">
+            <div class="num" id="num">
+              5462
+            </div>
+            <div class="status flex justify-center">
+              <img src="images\icon-up.svg" alt="" id="status-sign">
+              <span class="up" id="status">2257%</span>
+            </div>
+          </div>
+        </div>
+        <!-- /Card -->
+        <!-- Card -->
+        <div class="overview-card card instagram">
+          <div class="flex justify-space-between">
+            <h5 class="bold-light-text-color" id="page">Profile Views</h5>
+            <img src="images\icon-instagram.svg" alt="instagram">
+          </div>
+          <div class="flex justify-space-between">
+            <div class="num" id="num">
+              52K
+            </div>
+            <div class="status flex justify-center">
+              <img src="images\icon-up.svg" alt="" id="status-sign">
+              <span class="up" id="status">1375%</span>
+            </div>
+          </div>
+        </div>
+        <!-- /Card -->
+        <!-- Card -->
+        <div class="overview-card card twitter">
+          <div class="flex justify-space-between">
+            <h5 class="bold-light-text-color" id="page">Retweets</h5>
+            <img src="images\icon-twitter.svg" alt="twitter">
+          </div>
+          <div class="flex justify-space-between">
+            <div class="num" id="num">
+              117
+            </div>
+            <div class="status flex justify-center">
+              <img src="images\icon-up.svg" alt="" id="status-sign">
+              <span class="up" id="status">303%</span>
+            </div>
+          </div>
+        </div>
+        <!-- /Card -->
+        <!-- Card -->
+        <div class="overview-card card twitter">
+          <div class="flex justify-space-between">
+            <h5 class="bold-light-text-color" id="page">Likes</h5>
+            <img src="images\icon-twitter.svg" alt="twitter">
+          </div>
+          <div class="flex justify-space-between">
+            <div class="num" id="num">
+              507
+            </div>
+            <div class="status flex justify-center">
+              <img src="images\icon-up.svg" alt="" id="status-sign">
+              <span class="up" id="status">553%</span>
+            </div>
+          </div>
+        </div>
+        <!-- /Card -->
+        <!-- Card -->
+        <div class="overview-card card youtube">
+          <div class="flex justify-space-between">
+            <h5 class="bold-light-text-color" id="page">Likes</h5>
+            <img src="images\icon-youtube.svg" alt="youtube">
+          </div>
+          <div class="flex justify-space-between">
+            <div class="num" id="num">
+              107
+            </div>
+            <div class="status flex justify-center">
+              <img src="images\icon-down.svg" alt="" id="status-sign">
+              <span class="down" id="status">119%</span>
+            </div>
+          </div>
+        </div>
+        <!-- /Card -->
+        <!-- Card -->
+        <div class="overview-card card youtube">
+          <div class="flex justify-space-between">
+            <h5 class="bold-light-text-color" id="page">Total Views</h5>
+            <img src="images\icon-youtube.svg" alt="youtube">
+          </div>
+          <div class="flex justify-space-between">
+            <div class="num" id="num">
+              1407
+            </div>
+            <div class="status flex justify-center">
+              <img src="images\icon-down.svg" alt="" id="status-sign">
+              <span class="down" id="status">1407%</span>
+            </div>
+          </div>
+        </div>
+        <!-- /Card -->
+      </div>
+    </div>
+    <!-- /Over View -->
+
+
+
+
+  </main>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.linkedin.com/in/ahmed-elsayed-7605a3148/" target="_blanks">Ahmed Elsayed</a>.
+  </div>
+
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
